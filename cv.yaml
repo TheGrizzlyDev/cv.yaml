@@ -1,3 +1,44 @@
+apiVersion: adistefano/v1
 kind: CV
 spec:
-  name: Antonio
+  bio:
+    name: Antonio
+    surname: Di Stefano
+    description: |
+      Hello there! I am an Italian dev living in London. As far as I can remember I have always
+      been quite fond of tech, especially programming, and I think this could be a great opportunity
+      to test out and improve my skills. Not just a dev though, I am also very passionate about food, 
+      weird-facts and a lot more things!
+  jobs:
+    - company: eBay (git commit -m "WIP - currently working here!")
+      roles: ["Full-stack software engineer"]
+      duration: 1+ years
+      description: |
+        I am currently part of the Shipping team in eBay and I work with pretty much anything shipping
+        related! I am also working on a few other CI/CD related projects as well as some security work,
+        both mentoring as a Champion and doing some research on our systems. I have also contributed
+        to some systems that are part of our core infrastructure.
+    - company: Soldo
+      roles: ["Software engineer", "Project manager"]
+      duration: 3 years
+      description: |
+        Soldo is a B2B card issuer with a focus on post-transaction, making the accountants life easier.
+        There I worked both as a developer for all the 3 years and as a PM during the last year, during 
+        which I was mostly working with BI/data-science initiatise, and various other projects of different
+        natures.
+  study:
+    - school: ELIS College
+      duration: 2 years
+      description: | 
+        ELIS College is a professional school with a focus on hands-on experience, embedding us from the
+        get go in various hands-on experiences and projects with well-known companies in the area
+  skills:
+    - The java ecosystem, including various frameworks and some of the languages running on the JVM like 
+      Kotlin, which I am very fond of, and Groovy
+    - JS/TS with a focus on react, but also other UI frameworks like vue, angular, etc and some node backend 
+      as well. I recently started looking a little bit into deno, a new runtime for JS that natively supports
+      TS as well (I took this change to start writing some bazel rules https://github.com/TheGrizzlyDev/rules_deno)
+    - Lots and lots of various scripting languages, but mostly python and ruby
+    - Worked with docker, k8s and the likes
+    - Good experience in agile project management
+  supportedLocales: ["IT", "EN"] 
