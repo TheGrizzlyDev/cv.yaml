@@ -1,0 +1,18 @@
+body {
+    background: #fafafa;
+    overflow-x: hidden;
+}
+
+#window-bar {
+    width: 100%;
+    background: #404040;
+    padding: 4px 8px;
+}
+
+.window-action {
+    border-radius: 20px;
+    width: 8px;
+    height: 8px;
+    background-color: #202020;
+    display: inline-block;
+}

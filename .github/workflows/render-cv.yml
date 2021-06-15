@@ -1,0 +1,28 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Render CV
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  render-and-publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate html from yaml using http://hilite.me/
+        run: |
+          cv_code=$(cat cv.yaml)
+          export CV_HTML=$(curl -XPOST --data-urlencode "linenos=" --data-urlencode "style=monokai" --data-urlencode "code=${cv_code}" --data-urlencode "lexer=yaml" --data-urlencode "divstyles=padding:1em .6em;" http://hilite.me/api)
+          envsubst < index.html.tmpl > index.html
+      - name: Install wkhtmltopdf
+        run: sudo apt -y install wkhtmltopdf
+      - name: Generate pdf from html using wkhtmltopdf
+        run: wkhtmltopdf ./index.html cv.pdf
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with: 
+          branch: gh-pages
+          folder: .

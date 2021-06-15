@@ -1,0 +1,41 @@
+apiVersion: adistefano/v1
+kind: CV
+spec:
+  bio:
+    name: Antonio
+    surname: Di Stefano
+    description: |
+      Hello there! I am an Italian living in London. I’m currently a product engineer with broad experiences 
+      across the stack. I want to focus on core backend/systems engineering going forward. I am a big foodie! 
+      I love cooking, eating different foods and experiment with ingredients and ideas!I also have quite a broad 
+      array of various interests, including learning weird facts, drumming, learning new languages and reading 
+      comics and mangas.
+  jobs:
+    - company: eBay
+      roles: ["Full-stack software engineer", "Security Champion"]
+      duration: 1+ years
+      description: |
+        I am part of the shipping organisation within eBay. I work on the shipping rates team. I am active 
+        in a few initiatives outside of my team. Developer productivity and experience is one area I focus on. 
+        Another area is security, I am a “Security Champion” at eBay and have researched and patched multiple 
+        eBay wide attack vectors.
+    - company: Soldo
+      roles: ["Software engineer", "Project manager"]
+      duration: 3 years
+      description: |
+        Soldo is a B2B card issuer with a focus on post-transaction. There I worked both as a developer 
+        as well as a PM. My focus as a PM was on Business Intelligence and data-science initiatives, 
+        whereas as a Developer I mostly worked with system integrations.
+  education:
+    - school: ELIS College
+      duration: 2 years
+      description: | 
+        ELIS College is a professional school with a focus on hands-on experience, embedding us from the
+        get go in various hands-on experiences and projects with well-known companies in the area.
+  skills:
+    - JVM: ["Java", "Kotlin", "Groovy"]
+    - Web: ["JS", "TypeScript", "React"]
+    - Scripting: ["Bash", "Python", "Ruby"]
+    - Others: ["Go", "C#"]
+    - ContainerOrchestration: ["k8s", "docker-compose"]
+  supportedLocales: ["IT", "EN"] 
