@@ -6,10 +6,9 @@ spec:
     surname: Di Stefano
     description: |
       Hello there! I am an Italian dev living in London. I've been a product dev for quite a while now 
-      and I have been thinking about transitioning into core engineering for a while. Not just a dev though, 
-      I am also a big foodie! I love cooking, eating different foods and experiment with ingredients and ideas!
-      I also have quite a broad array of various interests, including learning weird facts and reading comics
-      and mangas.
+      and I would love to transition into core engineering. Not just a dev though, I am also a big foodie! 
+      I love cooking, eating different foods and experiment with ingredients and ideas! I also have quite 
+      a broad array of various interests, including learning weird facts and reading comics and mangas.
   jobs:
     - company: eBay
       roles: ["Full-stack software engineer", "Security Champion"]
