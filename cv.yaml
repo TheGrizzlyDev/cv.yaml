@@ -5,13 +5,14 @@ spec:
     name: Antonio
     surname: Di Stefano
     description: |
-      Hello there! I am an Italian dev living in London. As far as I can remember I have always
-      been quite fond of tech, especially programming, and I think this could be a great opportunity
-      to test out and improve my skills. Not just a dev though, I am also very passionate about food, 
-      weird-facts and a lot more things!
+      Hello there! I am an Italian dev living in London. I've been a product dev for quite a while now 
+      and I have been thinking about transitioning into core engineering for a while. Not just a dev though, 
+      I am also a big foodie! I love cooking, eating different foods and experiment with ingredients and ideas!
+      I also have quite a broad array of various interests, including learning weird facts and reading comics
+      and mangas.
   jobs:
-    - company: eBay (git commit -m "WIP - currently working here!")
-      roles: ["Full-stack software engineer"]
+    - company: eBay
+      roles: ["Full-stack software engineer", "Security Champion"]
       duration: 1+ years
       description: |
         I am currently part of the Shipping team in eBay and I work with pretty much anything shipping
@@ -22,23 +23,18 @@ spec:
       roles: ["Software engineer", "Project manager"]
       duration: 3 years
       description: |
-        Soldo is a B2B card issuer with a focus on post-transaction, making the accountants life easier.
-        There I worked both as a developer for all the 3 years and as a PM during the last year, during 
-        which I was mostly working with BI/data-science initiatise, and various other projects of different
-        natures.
-  study:
+        Soldo is a B2B card issuer with a focus on post-transaction. There I worked both as a developer as 
+        well as a PM during the last year, with a focus on BI/data-science initiatives.
+  education:
     - school: ELIS College
       duration: 2 years
       description: | 
         ELIS College is a professional school with a focus on hands-on experience, embedding us from the
-        get go in various hands-on experiences and projects with well-known companies in the area
+        get go in various hands-on experiences and projects with well-known companies in the area.
   skills:
-    - The java ecosystem, including various frameworks and some of the languages running on the JVM like 
-      Kotlin, which I am very fond of, and Groovy
-    - JS/TS with a focus on react, but also other UI frameworks like vue, angular, etc and some node backend 
-      as well. I recently started looking a little bit into deno, a new runtime for JS that natively supports
-      TS as well (I took this change to start writing some bazel rules https://github.com/TheGrizzlyDev/rules_deno)
-    - Lots and lots of various scripting languages, but mostly python and ruby
-    - Worked with docker, k8s and the likes
-    - Good experience in agile project management
+    - JVM: ["Java", "Kotlin", "Groovy"]
+    - Web: ["JS", "TypeScript", "React"]
+    - Scripting: ["Bash", "Python", "Ruby"]
+    - Others: ["Go", "C#"]
+    - ContainerOrchestration: ["k8s", "docker-compose"]
   supportedLocales: ["IT", "EN"] 
